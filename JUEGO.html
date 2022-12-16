@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<hi>PROGRAMA JUEGO DE ADIVINANSAS </hi>
+
+
+<script>
+
+	function saltarlinea(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}      
+
+	function imprimir(frase){
+		document.write(frase)
+	}
+
+	var	 numeroPensado = Math.round(Math.random()*10);
+	var  numeroLanzado = parseInt(prompt("Ingese un número entre 0-10"))
+
+	if (numeroPensado == numeroLanzado){
+		saltarlinea();
+		imprimir("usted acerto")
+
+	}
+
+	else	{
+		saltarlinea();
+		imprimir("usted erró el numero pensadon era " + numeroPensado)
+
+	}
+
+
+
+</script>
+
